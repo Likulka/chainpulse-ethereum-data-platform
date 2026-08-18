@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE and operating system
+.idea/
+.vscode/
+.DS_Store
+
+# Logs and runtime data
+*.log
+logs/
+tmp/
+data/
+
+# Airflow
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
