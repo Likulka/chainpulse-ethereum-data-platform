@@ -121,6 +121,31 @@ uv sync
 Application setup, tests, and shutdown commands will be documented here as
 soon as the corresponding files exist.
 
+## Development checks
+
+Install dependencies and Git hooks:
+
+```bash
+uv sync
+uv run pre-commit install
+```
+
+Run all checks:
+
+```bash
+uv run ruff check .
+uv run ruff format --check .
+uv run mypy src
+uv run pre-commit run --all-files
+```
+
+Apply automatic formatting and fixes:
+
+```bash
+uv run ruff check --fix .
+uv run ruff format .
+```
+
 ## Delivery guarantees
 
 The pipeline uses:
