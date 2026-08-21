@@ -102,17 +102,20 @@ scaffolded in advance.
 
 ## Quick start
 
-There is no runnable pipeline at the repository-bootstrap milestone yet.
-After the local infrastructure task is completed, the canonical workflow will
-be:
+## Quick start
+
+Requirements:
+
+- Python 3.11.9
+- uv
+- Docker with Docker Compose
+
+Clone the repository and install the Python environment:
 
 ```bash
-cp .env.example .env
-docker compose up -d
-docker compose ps
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -e .
+git clone https://github.com/Likulka/chainpulse-ethereum-data-platform.git
+cd chainpulse-ethereum-data-platform
+uv sync
 ```
 
 Application setup, tests, and shutdown commands will be documented here as
