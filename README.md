@@ -102,8 +102,6 @@ scaffolded in advance.
 
 ## Quick start
 
-## Quick start
-
 Requirements:
 
 - Python 3.11.9
