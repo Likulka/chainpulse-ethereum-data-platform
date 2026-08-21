@@ -78,19 +78,22 @@ Airflow: backfills, reconciliation, dbt runs, and data-quality checks
 | Looker Studio | Historical BI dashboard |
 | Docker Compose | Reproducible local environment |
 
-## Planned repository structure
+
+## Repository structure
 
 ```text
-chainpulse/
-├── src/chainpulse/       # Python application code
-├── tests/                # Unit and integration tests
-├── dags/                 # Airflow DAGs
-├── dbt/                  # dbt project
-├── infra/                # Infrastructure configuration
-├── docs/adr/             # Architecture decision records
-├── .env.example          # Safe configuration template
-├── compose.yaml          # Local services
-└── README.md
+src/chainpulse/
+├── ingestion/          # Ethereum JSON-RPC ingestion
+├── consumers/          # RabbitMQ consumers
+└── api/                # FastAPI application
+
+airflow/dags/            # Airflow DAGs
+dbt/                     # dbt project
+infra/                   # Infrastructure configuration
+tests/unit/              # Unit tests
+tests/integration/       # Integration tests
+docs/adr/                # Architecture decisions
+pyproject.toml           # Python project configuration
 ```
 
 Directories and configuration files will be introduced when their first
@@ -107,6 +110,9 @@ be:
 cp .env.example .env
 docker compose up -d
 docker compose ps
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .
 ```
 
 Application setup, tests, and shutdown commands will be documented here as
