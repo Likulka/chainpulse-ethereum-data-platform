@@ -143,4 +143,3 @@ record the decision, context, alternatives, and accepted trade-offs.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-

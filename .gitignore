@@ -44,4 +44,3 @@ dbt/dbt_packages/
 .terraform/
 *.tfstate
 *.tfstate.*
-
