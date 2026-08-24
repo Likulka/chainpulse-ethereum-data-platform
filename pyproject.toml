@@ -12,7 +12,11 @@ license = "MIT"
 authors = [
     { name = "Anzhelika" }
 ]
-dependencies = []
+dependencies = [
+    "alembic>=1.19.1",
+    "psycopg[binary]>=3.3.4",
+    "sqlalchemy>=2.0.52",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
