@@ -15,6 +15,7 @@ authors = [
 dependencies = [
     "alembic>=1.19.1",
     "psycopg[binary]>=3.3.4",
+    "pydantic-settings>=2.15.0",
     "sqlalchemy>=2.0.52",
 ]
 
@@ -25,6 +26,7 @@ where = ["src"]
 dev = [
     "mypy>=2.3.1",
     "pre-commit>=4.6.2",
+    "pytest>=9.1.1",
     "ruff>=0.16.4",
 ]
 
