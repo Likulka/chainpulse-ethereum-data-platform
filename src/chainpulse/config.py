@@ -74,6 +74,11 @@ class Settings(BaseSettings):
         validation_alias="POSTGRES_PASSWORD",
     )
 
+    rabbitmq_host: str = Field(
+        min_length=1,
+        validation_alias="RABBITMQ_HOST",
+    )
+
     rabbitmq_default_user: str = Field(
         min_length=1,
         validation_alias="RABBITMQ_DEFAULT_USER",

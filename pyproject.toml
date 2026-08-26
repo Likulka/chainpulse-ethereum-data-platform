@@ -13,6 +13,7 @@ authors = [
     { name = "Anzhelika" }
 ]
 dependencies = [
+    "aio-pika>=10.0.1",
     "aiolimiter>=1.2.1",
     "alembic>=1.19.1",
     "httpx>=0.28.1",
